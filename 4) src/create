@@ -1,0 +1,37 @@
+import { Link } from 'react-router-dom'
+export default function Home(){
+  return (
+    <div>
+      <section className="hero">
+        <div style={{display:'flex',gap:20,alignItems:'center',justifyContent:'space-between',flexWrap:'wrap'}}>
+          <div>
+            <h1>Indian Market Education Academy (IMEA)</h1>
+            <p>Learn Stock Market from Zero to Expert with Mr. Kundan — practical, simple and trusted lessons.</p>
+            <Link to="/courses"><button style={{padding:'10px 16px',background:'#fff',borderRadius:8,border:'none',cursor:'pointer'}}>Start Learning →</button></Link>
+          </div>
+          <div>
+            <!-- If you want a profile image, replace the path below. -->
+            <img className="hero-img" src="/screenshot.jpg" alt="IMEA" />
+          </div>
+        </div>
+      </section>
+
+      <section className="grid">
+        <div className="card">
+          <h3>Why IMEA?</h3>
+          <ul>
+            <li>Easy language lessons</li>
+            <li>Beginner → Advanced roadmap</li>
+            <li>Live market examples</li>
+            <li>Free notes & PDFs</li>
+          </ul>
+        </div>
+        <div className="card">
+          <h3>Featured Course</h3>
+          <p>Basic Stock Market Course — Free</p>
+          <Link to="/courses"><button style={{padding:'8px 12px',borderRadius:6}}>View Courses</button></Link>
+        </div>
+      </section>
+    </div>
+  )
+}
